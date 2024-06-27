@@ -1,4 +1,4 @@
-package com.thegeekyasian.designpatterns.strategies;
+package com.thegeekyasian.designpatterns.strategy.noti.strategies;
 
 /**
  * @author thegeekyasian

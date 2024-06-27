@@ -1,4 +1,4 @@
-package com.thegeekyasian.designpatterns.strategies;
+package com.thegeekyasian.designpatterns.strategy.noti.strategies;
 
 import org.springframework.stereotype.Service;
 
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class EmailNotificationService implements NotificationService {
 
   @Override
-  public void sendNotification() {
-    System.out.println("Sending email");
+  public String sendNotification() {
+    return "Sending email";
   }
 }

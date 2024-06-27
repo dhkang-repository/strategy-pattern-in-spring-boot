@@ -1,6 +1,6 @@
-package com.thegeekyasian.designpatterns.factories;
+package com.thegeekyasian.designpatterns.strategy.noti.factories;
 
-import com.thegeekyasian.designpatterns.strategies.NotificationService;
+import com.thegeekyasian.designpatterns.strategy.noti.strategies.NotificationService;
 import java.util.Map;
 import org.springframework.stereotype.Component;
 
@@ -52,8 +52,8 @@ public class NotificationFactory {
    * @param notificationType the type of notification to execute
    * @throws RuntimeException if the provided notification type is not supported
    */
-  public void execute(String notificationType) {
+  public String execute(String notificationType) {
     NotificationService notificationService = getNotificationService(notificationType);
-    notificationService.sendNotification();
+    return notificationService.sendNotification();
   }
 }

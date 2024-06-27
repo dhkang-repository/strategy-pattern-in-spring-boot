@@ -1,4 +1,4 @@
-package com.thegeekyasian.designpatterns.strategies;
+package com.thegeekyasian.designpatterns.strategy.noti.strategies;
 
 /**
  * The NotificationService interface defines the contract
@@ -15,5 +15,5 @@ public interface NotificationService {
    * It can be customized and have parameters as input,
    * can also be modified to have a return type.
    */
-  void sendNotification();
+  String sendNotification();
 }
